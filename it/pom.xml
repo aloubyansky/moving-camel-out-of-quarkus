@@ -41,9 +41,10 @@
         <module>camel-aws-s3</module>
         <module>camel-aws-sqs</module>
     </modules>
-<!--
+
     <build>
         <plugins>
+        <!--
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -52,21 +53,22 @@
                     <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
                 </configuration>
             </plugin>
+        -->
         </plugins>
     </build>
--->
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-integration-test-class-transformer-deployment</artifactId>
-                <version>${project.version}</version>
+                <version>${quarkus.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-integration-test-class-transformer</artifactId>
-                <version>${project.version}</version>
+                <version>${quarkus.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
+
 </project>
