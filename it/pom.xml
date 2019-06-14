@@ -40,6 +40,9 @@
         <module>camel-salesforce</module>
         <module>camel-aws-s3</module>
         <module>camel-aws-sqs</module>
+        <module>camel-aws-sns</module>
+        <module>camel-jdbc</module>
+        <module>camel-servlet</module>
     </modules>
 
     <build>
